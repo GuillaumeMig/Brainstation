@@ -1,0 +1,139 @@
+
+/* I HAVE TROUBLE TO REMOVE THE SPACE BETWEEN MY hr_type2 AND MY TITLE 'HIGHLIGHTS OF QUALIFICATIONS'.
+        I TRIED TO REMOVE ALL DE MARGIN-TOP (OR BOTTON FOR THE hr_type2), TEST A LOT OF SOLUTIONS, BUT NOTHING...
+        I ALSO HAVE TROUBLE TO SET MY print_2nd_page UNDER THE HEADER WITH AN ABSOLUTE POSITION.
+        I THINK I HAVE CONFLICTS BETWEEN main AND/OR print_1st_page AND print_2nd_page.
+
+
+
+/* || General setup */
+
+html {
+    margin-top: 0px;
+}
+
+html, body, header, main, {
+    width: 21.6cm;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+}
+
+main {
+    margin-top: 201px;
+}
+
+.print_1st_page {
+  /*  display: absolute;
+    top: 201px; */
+}
+
+.print_2nd_page {
+/*    display: absolute;
+    top: 201px; */
+}
+
+/* header */
+
+.top_bar {
+    position: fixed;
+    background-color: white;
+    overflow: hidden;
+    top: 0;
+    padding-top: 0px;
+}
+
+#name {
+    font-size: 31px;
+    font-weight: bold;
+}
+
+#mailing_address {
+    font-size: 24px;
+    display: inline;
+}
+
+#cell_number {
+    font-size: 21px;
+    float: right;
+}
+
+#email_address {
+    font-size: 24px;
+    color: black;
+}
+
+#linkedin_address {
+    font-size: 23px;
+    float: right;
+    color: black;
+}
+
+.hr_type1 {
+    height: 1px;
+    color: black;
+    background: black;
+}
+
+.hr_type2 {
+    height: 1px;
+    margin-bottom: 0px;
+    color: black;
+    background: black;
+}
+
+.target_job {
+    font-size: 22px;
+}
+
+/* titles */
+
+.target_job, .section_title {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.highlights_title {
+    display: absolute;
+    top: 201px;
+}
+
+.highlights_title, .section_title {
+    font-size: 18px;    
+}
+
+/* lists */
+
+.highlights_list {
+    margin-left: 16px;
+    list-style-type: square;
+}
+
+.other_list {
+    margin-top: 0px;
+    margin-left: 5px;
+}
+
+/* details */
+
+.job_title {
+    display: inline;
+    font-size: 19px;
+}
+
+.date {
+    float: right;
+}
+
+.project {
+    margin-left: 20px;
+}
+
+.degree {
+    display: inline;
+}
+
+.school{
+    margin-left: 10px;
+}
